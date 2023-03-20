@@ -1,187 +1,195 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-	<title> Team Bento Website</title>
-	<link rel="icon" type="image/x-icon" href="assets/bento-box.webp">
-	<script src="index.js"></script>
-	<style>
+    <title>Bento Robotics</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/bento-box.webp">
+    <script src="index.js"></script>
+    <style>
 
-		@font-face {
-			font-family: New Rodin;
-			src: url(fonts/FOT-NewRodin\ Pro\ EB.otf);
-		}
+        @font-face {
+            font-family: New Rodin;
+            src: url("fonts/FOT-NewRodin Pro EB.otf");
+        }
 
-		@font-face {
-			font-family: Brandon Grotesque;
-			src: url(fonts/brandon-grotesque-bold-italic-58a8a48221563.otf);
-		}
+        @font-face {
+            font-family: Brandon Grotesque;
+            src: url(fonts/brandon-grotesque-bold-italic-58a8a48221563.otf);
+        }
 
-		@font-face {
-			font-family: cmu;
-			src: url(fonts/cmunbx.ttf);
-		}
+        @font-face {
+            font-family: cmu;
+            src: url(fonts/cmunbx.ttf);
+        }
 
-		@font-face {
-			font-family: ySans;
-			src: url(fonts/youtube-sans-medium.ttf);
-		}
+        @font-face {
+            font-family: ySans;
+            src: url(fonts/youtube-sans-medium.ttf);
+        }
 
-		body {
-			font-family: ySans;
-			background-color: #555;
-		}
+        @font-face {
+            font-family: NeonVamp;
+            src: url("fonts/Neon Vampire.otf");
+        }
 
-		header {
-			background-color: red;
-			color: white;
-			text-align: center;
-			padding: 20px 0;
-			padding: 20px;
-			margin: 20px;
-			border-radius: 10px;
-		}
-		h1 {
-			font-size: 48px;
-		}
-		section {
-			padding: 20px;
-			margin: 20px;
-			background-color: #3d3d3d;
-			border: 1px solid red;
-			border-radius: 10px;
-		}
+        body {
+            font-family: ySans;
+            background-color: #555;
+        }
 
-		.hoverable:hover {
-			background-color: #292929;
-		}
-		.clickable:hover {
-			cursor: pointer;
-		}
-		h2 {
-			color: white;
-			font-size: 36px;
-			margin-top: 0;
-		}
-		p {
-			color: white;
-			font-size: 24px;
-		}
-		ul {
-			font-size: 24px;
-			list-style-type: none;
-			padding: 0;
-		}
+        header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
 
-		li:before {
-			content: "\2022";
-			color: #008CBA;
-			display: inline-block;
-			width: 1em;
-			margin-left: -1em;
-		}
+        h1 {
+            font-size: 48px;
+        }
 
-		footer {
-			background-color: #555;
-			color: white;
-			text-align: center;
-			padding: 20px;
-			margin: 20px;
-			border-radius: 10px;
-		}
-		
-		a {
-			text-decoration: none;
-			color: black;
-		}
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #3d3d3d;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
 
-		.foto {
-			border-radius: 10px;
-			margin: 50px;
-		}
+        .hoverable:hover {
+            background-color: #292929;
+        }
 
-		.columns {
-			align-items: center;
-			display: flex;
-			gap: 100px;
-		}
+        .clickable:hover {
+            cursor: pointer;
+        }
 
-		.tinted {
-			color: #555;
-			text-align: center;
-		}
+        h2 {
+            color: white;
+            font-size: 36px;
+            margin-top: 0;
+        }
 
-		.video {
-			display: flex;
-			justify-content: center;
-		}
+        p {
+            color: white;
+            font-size: 24px;
+        }
 
-		.description {
-			margin: 50px;
-			text-align: justify;
-		}
+        ul {
+            font-size: 24px;
+            list-style-type: none;
+            padding: 0;
+        }
 
-	</style>
+        li:before {
+            content: "\2022";
+            color: #008CBA;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .columns {
+            align-items: center;
+            display: flex;
+            gap: 100px;
+        }
+
+        .tinted {
+            color: #555;
+            text-align: center;
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
 </head>
+
 <body>
-	<header>
-		<h1>🍱 Team Bento 🍱</h1>
-	</header>
-	<section>
-		<h2>About Us</h2>
-		<p>We are a team of students, interested in robotics. Our Robot called 'Bento Box' is a robot which can search for people. With our different abilities we benefit from each other, just like a bento box benefits from the different food within it.</p>
-	</section>
-<a href="assets/Robot WM bewerbung.pdf" target="_blank" download="Team Bento application">
-	
-	<section class="hoverable">
-		<h2>Download our application</h2>
-		<p>Click here to download out application for the RMRC league at the RoboCup 2023 in Bordeaux
-		</p>
-		
-	</section>
+<header>
+    <h1 style="font-family: NeonVamp; font-size: 3.5em">🍱 Team Bento 🍱</h1>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>We are a team of students interested in robotics. <br>
+        With our joint capabilities we benefit from each other, much like the way different foodstuffs in a bento box
+        add up to create something great. <br>
+        <br>
+        Our current robot is Zyklop, an all-rounded robot that got us into robotics and has been testing ground for many
+        features. <br>
+        Our next-gen robot is the 'Bento Box', a small 6-wheeled contraption that can map out dangerous areas and
+        search for humans.
+    </p>
+</section>
+
+<section class="hoverable clickable" onclick="unfoldRobotZyklop()">
+    <h2>Our old Robot 'Zyklop'</h2>
+    <div id="robot-zyklop">
+        <p>The "Zyklop" is our old robot</p>
+        <p class="tinted">(click to read more)</p>
+    </div>
+    <div class="columns" id="robot-zyklop-unfolded"></div>
+</section>
+
+<section class="hoverable clickable" onclick="unfoldRobotBento()">
+    <h2>Our future Robot: 'Bento Box'</h2>
+    <div id="robot-bento_box">
+        <p>The "Bento Box" is our next-gen robot</p>
+        <p class="tinted">(click to read more)</p>
+    </div>
+    <div class="columns" id="robot-bento_box-unfolded"></div>
+</section>
+
+<section class="hoverable clickable" onclick="unfoldTeam()">
+    <h2>Our Team</h2>
+    <div id="team">
+        <p>Hey look, it's us!</p>
+        <p class="tinted">(click to read more)</p>
+    </div>
+    <div class="columns" id="team-unfolded"></div>
+</section>
+
+<a href="assets/RMRC-Bordeaux_application.pdf" target="_blank" download="RMRC-Bordeaux application">
+    <section class="hoverable">
+        <h2>Download our application</h2>
+        <p>Click here to download out application for the RMRC league at the RoboCup 2023 in Bordeaux</p>
+    </section>
 </a>
-	<section class="hoverable clickable" onclick="addrobotzyklop()">
-		<h2>Our old Robot 'Zyklop'</h2>
-		<div id="robotzyklop1">
-			<p>The "Zyklop" Robot is our old robot</p><p class="tinted">(click to read more)</p>
-		</div>
-		<div class="columns" id="robotzyklop">
-			
-		</div>
-	</section>
-	<section class="hoverable clickable" onclick="addrobotbento()">
-		<h2>Our future Robot: 'Bento Box'</h2>
-		<div id="robotbento1">
-			<p>The "Bento Box" Robot will be our future robot</p><p class="tinted">(click to read more)</p>
-		</div>
-		<div class="columns" id="robotbento">
-			
-		</div>
-	</section>
-	
-	<section class="hoverable clickable" onclick="addteam()">
-		<h2>Our Team</h2>
-		<div id="team1">
-			<p>Our team consists of a total of six members. Together the team is well-rounded and is able to efficiently work together as one. By participating in the international competition, we also want to strengthen our teamwork and receive more experience.</p><p class="tinted">(click to read more)</p>
-		</div>
-		<div class="columns" id="team">
-			
-		</div>
-	</section>
 
-	<section class="hoverable clickable" onclick="addgalery()">
-		<h2>Gallery</h2>
-		<div id="galery1">
-			<p>You can watch some of our content here!</p><p class="tinted">(click to read more)</p>
-		</div>
-		<div class="video" id="galery">
-			
-		</div>
-	</section>
-	<footer>
-		<p>© 2023 The Bento Team</p>
-	</footer>
+<section class="hoverable clickable" onclick="unfoldGallery()">
+    <h2>Gallery</h2>
+    <div id="gallery">
+        <p>You can see at what we've been up to here</p>
+        <p class="tinted">(click to read more)</p>
+    </div>
+    <div class="video" id="gallery-unfolded"></div>
+</section>
 
+<footer>
+    <p>© 2023 The Bento Team</p>
+</footer>
 
-
-</body></html>
+</body>
+</html>
