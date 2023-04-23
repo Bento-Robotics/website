@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <title>Bento Robotics</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/bento-box.webp">
+    <link rel="icon" type="image/x-icon" href="assets/images/bento-logo.webp">
     <script src="index.js"></script>
     <style>
 
@@ -118,24 +118,39 @@
             text-align: center;
         }
 
-        .video {
+        .gallery {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
+
+        /* TODO: implement enlarge-on-click for images */
+        /*.img:hover {*/
+        /*    color: #424242;*/
+        /*    -webkit-transition: all .3s ease-in;*/
+        /*    -moz-transition: all .3s ease-in;*/
+        /*    -ms-transition: all .3s ease-in;*/
+        /*    -o-transition: all .3s ease-in;*/
+        /*    transition: all .3s ease-in;*/
+        /*    opacity: 1;*/
+        /*    transform: scale(1.15);*/
+        /*    -ms-transform: scale(1.15); !* IE 9 *!*/
+        /*    -webkit-transform: scale(1.15); !* Safari and Chrome *!*/
+        /*}*/
 
     </style>
 </head>
 
 <body>
 <header>
-    <h1 style="font-family: NeonVamp; font-size: 3.5em">🍱 Team Bento 🍱</h1>
+    <h1 style="font-family: NeonVamp; font-size: 3.5em">🍱 Bento Robotics 🍱</h1>
 </header>
 
 <section>
     <h2>About Us</h2>
     <p>We are a team of students interested in robotics. <br>
         With our joint capabilities we benefit from each other, much like the way different foodstuffs in a bento box
-        add up to create something great. <br>
+        complement each other to create something great. <br>
         <br>
         Our current robot is Zyklop, an all-rounded robot that got us into robotics and has been testing ground for many
         features. <br>
@@ -144,26 +159,35 @@
     </p>
 </section>
 
+<section>
+    <h2>Links</h2>
+    <p>Sponsor us: <a style="color: gray"
+                      href="https://ihk-sponsoringboerse.de/teilnahme-an-der-roboter-wm-in-bordeaux/" target="_blank">ihk-sponsoringboerse.de</a>
+    </p>
+    <p>Our Github: <a style="color: gray" href="https://github.com/Bento-Robotics" target="_blank">github.com</a></p>
+
+</section>
+
 <section class="hoverable clickable" onclick="unfoldRobotZyklop()">
-    <h2>Our old Robot 'Zyklop'</h2>
+    <h2>Zyklop</h2>
     <div id="robot-zyklop">
-        <p>The "Zyklop" is our old robot</p>
+        <p>Zyklop is our first robot</p>
         <p class="tinted">(click to read more)</p>
     </div>
     <div class="columns" id="robot-zyklop-unfolded"></div>
 </section>
 
 <section class="hoverable clickable" onclick="unfoldRobotBento()">
-    <h2>Our future Robot: 'Bento Box'</h2>
+    <h2>Box</h2>
     <div id="robot-bento_box">
-        <p>The "Bento Box" is our next-gen robot</p>
+        <p>Bento "Box" is our next-gen robot</p>
         <p class="tinted">(click to read more)</p>
     </div>
     <div class="columns" id="robot-bento_box-unfolded"></div>
 </section>
 
 <section class="hoverable clickable" onclick="unfoldTeam()">
-    <h2>Our Team</h2>
+    <h2>The team</h2>
     <div id="team">
         <p>Hey look, it's us!</p>
         <p class="tinted">(click to read more)</p>
@@ -174,21 +198,25 @@
 <a href="assets/RMRC-Bordeaux_application.pdf" target="_blank" download="RMRC-Bordeaux application">
     <section class="hoverable">
         <h2>Download our application</h2>
-        <p>Click here to download out application for the RMRC league at the RoboCup 2023 in Bordeaux</p>
+        <p>Click here to download our application for the RMRC league at the RoboCup 2023 in Bordeaux</p>
     </section>
 </a>
 
-<section class="hoverable clickable" onclick="unfoldGallery()">
+<section class="hoverable clickable" style="align-items: center" onclick="unfoldGallery()">
+    <box></box>
     <h2>Gallery</h2>
     <div id="gallery">
-        <p>You can see at what we've been up to here</p>
+        <p>See at what we've been up to</p>
         <p class="tinted">(click to read more)</p>
     </div>
-    <div class="video" id="gallery-unfolded"></div>
+
+    <div class="gallery" id="gallery-unfolded"></div>
 </section>
 
 <footer>
-    <p>© 2023 The Bento Team</p>
+    <p>2023 The Bento Team</p>
+    <p style="color: #9999">This site uses javascript, disabling it will result in the site malfunctioning<br>
+        don't worry, we're not after your stuff :)</p>
 </footer>
 
 </body>
