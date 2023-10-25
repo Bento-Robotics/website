@@ -5,218 +5,91 @@
 
     <title>Bento Robotics</title>
     <link rel="icon" type="image/x-icon" href="assets/images/bento-logo.webp">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <style>
 
-        @font-face {
-            font-family: New Rodin;
-            src: url("fonts/FOT-NewRodin Pro EB.otf");
-        }
-
-        @font-face {
-            font-family: Brandon Grotesque;
-            src: url(fonts/brandon-grotesque-bold-italic-58a8a48221563.otf);
-        }
-
-        @font-face {
-            font-family: cmu;
-            src: url(fonts/cmunbx.ttf);
-        }
-
-        @font-face {
-            font-family: ySans;
-            src: url(fonts/youtube-sans-medium.ttf);
-        }
-
-        @font-face {
-            font-family: NeonVamp;
-            src: url("fonts/Neon Vampire.otf");
-        }
-
-        body {
-            font-family: ySans;
-            background-color: #555;
-        }
-
-        header {
-            background-color: red;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 48px;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #3d3d3d;
-            border: 1px solid red;
-            border-radius: 10px;
-        }
-
-        .hoverable:hover {
-            background-color: #292929;
-        }
-
-        .clickable:hover {
-            cursor: pointer;
-        }
-
-        h2 {
-            color: white;
-            font-size: 36px;
-            margin-top: 0;
-        }
-
-        p {
-            color: white;
-            font-size: 24px;
-        }
-
-        ul {
-            font-size: 24px;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li:before {
-            content: "\2022";
-            color: #008CBA;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-
-        footer {
-            background-color: #555;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .columns {
-            align-items: center;
-            display: flex;
-            gap: 100px;
-        }
-
-        .tinted {
-            color: #555;
-            text-align: center;
-        }
-
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* TODO: implement enlarge-on-click for images */
-        /*.img:hover {*/
-        /*    color: #424242;*/
-        /*    -webkit-transition: all .3s ease-in;*/
-        /*    -moz-transition: all .3s ease-in;*/
-        /*    -ms-transition: all .3s ease-in;*/
-        /*    -o-transition: all .3s ease-in;*/
-        /*    transition: all .3s ease-in;*/
-        /*    opacity: 1;*/
-        /*    transform: scale(1.15);*/
-        /*    -ms-transform: scale(1.15); !* IE 9 *!*/
-        /*    -webkit-transform: scale(1.15); !* Safari and Chrome *!*/
-        /*}*/
-
-    </style>
 </head>
 
 <body>
 <header>
-    <h1 style="font-family: NeonVamp; font-size: 3.5em">🍱 Bento Robotics 🍱</h1>
+    <h1>Bento Robotics 🤖</h1>
 </header>
+<nav>
 
-<section>
-    <h2>About Us</h2>
-    <p>We are a team of students interested in robotics. <br>
-        With our joint capabilities we benefit from each other, much like the way different foodstuffs in a bento box
-        complement each other to create something great. <br>
-        <br>
-        Our current robot is Zyklop, an all-rounded robot that got us into robotics and has been testing ground for many
-        features. <br>
-        Our next-gen robot is the 'Bento Box', a small 6-wheeled contraption that can map out dangerous areas and
-        search for humans.
-    </p>
-</section>
-
-<section>
-    <h2>Links</h2>
-    <p>Sponsor us: <a style="color: gray"
-                      href="https://ihk-sponsoringboerse.de/teilnahme-an-der-roboter-wm-in-bordeaux/" target="_blank">ihk-sponsoringboerse.de</a>
-    </p>
-    <p>Our Github: <a style="color: gray" href="https://github.com/Bento-Robotics" target="_blank">github.com</a></p>
-
-</section>
-
-<section class="hoverable clickable" onclick="unfoldRobotZyklop()">
-    <h2>Zyklop</h2>
-    <div id="robot-zyklop">
-        <p>Zyklop is our first robot</p>
-        <p class="tinted">(click to read more)</p>
+</nav>
+<div class="main">
+    <div class="small" id="">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
     </div>
-    <div class="columns" id="robot-zyklop-unfolded"></div>
-</section>
-
-<section class="hoverable clickable" onclick="unfoldRobotBento()">
-    <h2>Box</h2>
-    <div id="robot-bento_box">
-        <p>Bento "Box" is our next-gen robot</p>
-        <p class="tinted">(click to read more)</p>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
+        
     </div>
-    <div class="columns" id="robot-bento_box-unfolded"></div>
-</section>
-
-<section class="hoverable clickable" onclick="unfoldTeam()">
-    <h2>The team</h2>
-    <div id="team">
-        <p>Hey look, it's us!</p>
-        <p class="tinted">(click to read more)</p>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
     </div>
-    <div class="columns" id="team-unfolded"></div>
-</section>
-
-<a href="assets/RMRC-Bordeaux_application.pdf" target="_blank" download="RMRC-Bordeaux application">
-    <section class="hoverable">
-        <h2>Download our application</h2>
-        <p>Click here to download our application for the RMRC league at the RoboCup 2023 in Bordeaux</p>
-    </section>
-</a>
-
-<section class="hoverable clickable" style="align-items: center" onclick="unfoldGallery()">
-    <box></box>
-    <h2>Gallery</h2>
-    <div id="gallery">
-        <p>See at what we've been up to</p>
-        <p class="tinted">(click to read more)</p>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
     </div>
+    <div class="">
+        <div class="inner">
+            <h2>Contact Information</h2>
+            <p>Contact us via:</p>
+            <p>
+                <ul>
+                    <li><p>Mail: <a href="mailto:mail@lusherzog.de">luisherzog.de</p></a></li>
+                    <li><p>Github: <a href="mailto:mail@lusherzog.de">luisherzog.de</p></a></li>
+                    <li><p> <a href="mailto:mail@lusherzog.de">luisherzog.de</p></a></li>
 
-    <div class="gallery" id="gallery-unfolded"></div>
-</section>
+                    
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
+    </div>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
+    </div>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
+    </div>
+    <div class="small">
+        <div class="inner">
+            <h2>Überschrift</h2>
+            <p>innerer Text</p>
+        </div>
+    </div>
+</div>
+
+
+
 
 <footer>
-    <p>2023 The Bento Team</p>
-    <p style="color: #9999">This site uses javascript, disabling it will result in the site malfunctioning<br>
-        don't worry, we're not after your stuff :)</p>
+    <p>© 2023 The Bento Team</p>
+    <p>This site uses javascript, disabling it will result in the site malfunctioning don't worry, we're not after your stuff :)</p>
 </footer>
 
 </body>
